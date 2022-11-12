@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import "./App.css";
-// import Expenses from "./componenets/Expenses";
+
 import Expenses from './componenets/Expenses/Expenses'
 import NewExpense from "./componenets/NewExpense/NewExpense";
 
@@ -14,7 +14,7 @@ function App() {
     },
     {
       id: "e2",
-      title: "Car Insurence",
+      title: "Car Insurance",
       amount: "267.12",
       date: new Date(2021, 2, 14),
     },
