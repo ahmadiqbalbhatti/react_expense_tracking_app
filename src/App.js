@@ -3,6 +3,7 @@ import "./App.css";
 
 import Expenses from './componenets/Expenses/Expenses'
 import NewExpense from "./componenets/NewExpense/NewExpense";
+import ExpenseFilter from "./componenets/Expenses/ExpenseFilter";
 
 function App() {
   const expenses = [
