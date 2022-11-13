@@ -5,5 +5,10 @@
     width: 50rem;
     max-width: 95%;
     min-width: 25rem;
+}
 
+h3{
+    color: #a892ee;
+    text-align: center;
+    padding: 2rem;
 }
