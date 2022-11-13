@@ -3,19 +3,6 @@ import './ExpensesList.css'
 
 function ExpensesList(props) {
 
-    // let expenseContent = <h3>No Expense Added!</h3>;
-    //
-    // if (props.items.length > 0) {
-    //     expenseContent = props.items.map((expense) => (
-    //         <ExpenseItem
-    //             key={expense.id}
-    //             title={expense.title}
-    //             amount={expense.amount}
-    //             date={expense.date}
-    //         />
-    //     ));
-    // }
-
     if (props.items.length === 0) {
         return <h2 className="expense-list__fallback">Found No Expenses!</h2>
     }

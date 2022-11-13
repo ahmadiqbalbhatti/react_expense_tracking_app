@@ -25,7 +25,7 @@ function App() {
             id: "e3",
             title: "New TV",
             amount: "788.89",
-            date: new Date(2020, 7, 14),
+            date: new Date(2020, 6, 14),
         },
         {
             id: "e4",
@@ -47,7 +47,6 @@ function App() {
 
     return (
         <div>
-
             <NewExpense onAddExpense={addExpenseHandler}/>
             <Expenses items={expenses}/>
         </div>

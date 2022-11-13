@@ -1,10 +1,10 @@
 import Card from "../UI/Card";
-import ExpenseItem from "./ExpenseItem";
 
 import './Expenses.css'
 import ExpenseFilter from "./ExpenseFilter";
 import {useState} from "react";
 import ExpensesList from "./ExpensesList";
+import ExpensesChart from "./ExpensesChart";
 
 function Expenses(props) {
     const [filteredYear, setFilteredYear] = useState('all');
@@ -14,7 +14,7 @@ function Expenses(props) {
     }
 
     const filteredExpense = props.items.filter(expense => {
-        if (filteredYear === "all") {
+        if (filteredYear ==="all") {
             return expense;
         }
         return expense.date.getFullYear().toString() === filteredYear;
@@ -40,7 +40,9 @@ function Expenses(props) {
 
                 {/*{expenseContent}*/}
 
+                <ExpensesChart expenses={filteredExpense}/>
                 <ExpensesList items={filteredExpense}/>
+
                 {/*/!* It's a simple trick for using turner operator*!/*/}
                 {/*{filteredExpense.length === 0 && <h3>No Expense Added!</h3>}*/}
                 {/*{filteredExpense.length > 0 &&*/}
